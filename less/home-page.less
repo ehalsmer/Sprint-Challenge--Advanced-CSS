@@ -3,7 +3,13 @@
 .home {
 
   .intro {
+    // display: flex;
 
+    .header-img {
+      display: inline-block;
+        width: 100%;
+        height: auto;
+    }
     h2 {
       padding: 15px;
     }
@@ -25,6 +31,16 @@
       border-radius: 20px;
       // height: 100%;
       .imgWidthHeight(28%, 100%);
+      @media @phone {
+        .imgWidthHeight(100%, 100%);
+        margin: 20px 4%;
+      }
+    }
+
+    .sky, .launch {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
