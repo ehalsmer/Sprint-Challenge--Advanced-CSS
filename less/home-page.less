@@ -61,8 +61,9 @@
       .btn {
         button {
           .button(@btn-bg-color, @wild-sand);
-          padding: 0.6rem 1.6rem;
-          font-size: 1.5rem;
+        }
+        button:hover {
+          .button(@wild-sand, @btn-bg-color);
         }
       }
     }
