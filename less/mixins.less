@@ -1,1 +1,24 @@
 // Mixins Here
+
+// Two mixins:
+
+.flexDisplay (@justifyContent){
+    display: flex;
+    justify-content: @justifyContent;
+}
+
+.imgWidthHeight (@width, @height){
+    width: @width;
+    height: @height;
+}
+
+// Button mixin:
+
+.button(@bgColor, @fontColor){
+    color: @fontColor;
+    background-color: @bgColor;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 7px;
+}
