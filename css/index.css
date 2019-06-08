@@ -165,7 +165,10 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background: #F6F6F6;
+  background: rgba(246, 246, 246, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 nav h1 {
   font-size: 3rem;
@@ -200,6 +203,9 @@ footer p {
   footer p {
     font-size: 1.1rem;
   }
+}
+.home {
+  padding-top: 103px;
 }
 .home .intro .header-img {
   display: inline-block;
