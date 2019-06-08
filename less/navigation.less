@@ -4,7 +4,10 @@ nav {
     padding: 1rem 0rem 0rem 0rem;
     .flexDisplay(center);
     flex-wrap: wrap;
-    background: @nav-bg;
+    background: rgba(246, 246, 246, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
     h1 {
         font-size: 3rem;
         width: 100%;
@@ -19,5 +22,15 @@ nav {
             text-decoration: none;
             color: black;
         }
+    }
+    animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
